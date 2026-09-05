@@ -1,0 +1,16 @@
+{
+  "name": "techserve-pro",
+  "version": "1.0.0",
+  "description": "TechServe Pro - Technical Support Ecosystem Website",
+  "main": "index.html",
+  "scripts": {
+    "start": "powershell -ExecutionPolicy Bypass -File server.ps1"
+  },
+  "keywords": [
+    "technical-support",
+    "ecosystem",
+    "static-website"
+  ],
+  "author": "TechServe Ecosystem Team",
+  "license": "ISC"
+}

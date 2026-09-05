@@ -1,0 +1,1443 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1280">
+  <title>TechServe Pro | Technical Support & Enterprise Maintenance Ecosystem</title>
+  <meta name="description" content="Unified technical support ecosystem connecting customers, certified technicians, colleges, and corporate offices for repair, maintenance, and AMC services.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <div class="container announcement-content">
+      <span><i class="fa-solid fa-bolt text-accent"></i> <strong>24/7 Enterprise Emergency SLA Available:</strong> Instant Technician Dispatch within 30 Minutes!</span>
+      <div class="announcement-links">
+        <a href="tel:18005558324"><i class="fa-solid fa-phone"></i> 1-800-555-TECH</a>
+        <a href="#enterprise"><i class="fa-solid fa-building-columns"></i> College AMC Portal</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-logo">
+        <div class="logo-icon">
+          <i class="fa-solid fa-microchip"></i>
+        </div>
+        <div class="logo-text">
+          <span class="brand-name">TechServe<span class="brand-accent">Pro</span></span>
+          <span class="brand-tagline">Ecosystem</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="#technicians" class="nav-link">Technicians</a></li>
+          <li class="nav-item"><a href="#enterprise" class="nav-link">Colleges & Offices</a></li>
+          <li class="nav-item"><a href="#tracker" class="nav-link">Service Tracker</a></li>
+          <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Navigation Action Controls -->
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button class="theme-toggle" id="theme-toggle" title="Toggle Dark / Light Mode" aria-label="Toggle dark mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <!-- Track Repair Modal Trigger -->
+        <button class="btn btn-outline btn-sm" id="btn-open-track">
+          <i class="fa-solid fa-magnifying-glass"></i> <span class="hide-mobile">Track Ticket</span>
+        </button>
+
+        <!-- Book Service CTA -->
+        <button class="btn btn-primary btn-sm" id="btn-open-book">
+          <i class="fa-solid fa-calendar-check"></i> <span>Book Service</span>
+        </button>
+
+        <!-- Auth Button -->
+        <button class="btn btn-secondary btn-sm hide-mobile" id="btn-open-auth">
+          <i class="fa-solid fa-right-to-bracket"></i> Login
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="mobile-drawer-header">
+      <div class="nav-logo">
+        <div class="logo-icon"><i class="fa-solid fa-microchip"></i></div>
+        <span class="brand-name">TechServe<span class="brand-accent">Pro</span></span>
+      </div>
+      <button class="mobile-close" id="mobile-close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="mobile-drawer-body">
+      <ul class="mobile-nav-list">
+        <li><a href="#hero" class="mobile-nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="#services" class="mobile-nav-link"><i class="fa-solid fa-screwdriver-wrench"></i> All Services</a></li>
+        <li><a href="#technicians" class="mobile-nav-link"><i class="fa-solid fa-user-gear"></i> Verified Technicians</a></li>
+        <li><a href="#enterprise" class="mobile-nav-link"><i class="fa-solid fa-building-columns"></i> Colleges & Office Solutions</a></li>
+        <li><a href="#tracker" class="mobile-nav-link"><i class="fa-solid fa-route"></i> Track Order / Ticket</a></li>
+        <li><a href="#faq" class="mobile-nav-link"><i class="fa-solid fa-circle-question"></i> FAQs</a></li>
+        <li><a href="#contact" class="mobile-nav-link"><i class="fa-solid fa-headset"></i> Contact Support</a></li>
+      </ul>
+      <div class="mobile-drawer-actions">
+        <button class="btn btn-primary btn-block" onclick="openBookModal()">
+          <i class="fa-solid fa-calendar-check"></i> Book Technical Service
+        </button>
+        <button class="btn btn-secondary btn-block" onclick="openAuthModal()">
+          <i class="fa-solid fa-user"></i> Portal Login / Register
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+      </div>
+      
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge animate-fade-in">
+            <span class="badge-pulse"></span>
+            <span>Next-Gen Technical Ecosystem Platform</span>
+          </div>
+
+          <h1 class="hero-title animate-slide-up">
+            Unified Technical Support for <span class="gradient-text">Homes, Colleges & Offices</span>
+          </h1>
+
+          <p class="hero-description animate-slide-up delay-1">
+            Connect directly with verified expert technicians, schedule quick home repairs, manage institutional IT labs, and set up comprehensive Annual Maintenance Contracts (AMC) with guaranteed SLAs.
+          </p>
+
+          <!-- Search Bar Box -->
+          <div class="hero-search-box animate-slide-up delay-2">
+            <div class="search-input-wrapper">
+              <i class="fa-solid fa-magnifying-glass search-icon"></i>
+              <input type="text" id="hero-search-input" placeholder="Search service e.g., Laptop Repair, AC Cleaning, CCTV Setup..." autocomplete="off">
+              <button class="clear-search" id="clear-search-btn"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="search-category-select">
+              <select id="hero-category-select">
+                <option value="all">All Categories</option>
+                <option value="hardware">IT & Computer</option>
+                <option value="home">Home Appliances</option>
+                <option value="hvac">AC & Cooling</option>
+                <option value="security">CCTV & Network</option>
+              </select>
+            </div>
+            <button class="btn btn-primary search-btn" id="hero-search-btn">
+              <i class="fa-solid fa-arrow-right"></i> <span>Find Service</span>
+            </button>
+            
+            <!-- Live Search Suggestions Dropdown -->
+            <div class="search-suggestions" id="search-suggestions"></div>
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-ctas animate-slide-up delay-3">
+            <button class="btn btn-primary btn-lg" onclick="openBookModal()">
+              <i class="fa-solid fa-plus-circle"></i> Request Service Now
+            </button>
+            <a href="#enterprise" class="btn btn-outline btn-lg">
+              <i class="fa-solid fa-calculator"></i> AMC Cost Calculator
+            </a>
+            <button class="btn btn-ghost btn-lg" id="btn-open-brochure">
+              <i class="fa-solid fa-file-pdf"></i> Download Brochure
+            </button>
+          </div>
+
+          <!-- Quick Trust Pills -->
+          <div class="trust-pills animate-fade-in delay-4">
+            <span><i class="fa-solid fa-shield-halved text-success"></i> ISO 9001 Certified</span>
+            <span><i class="fa-solid fa-clock text-primary"></i> 30-Min Emergency SLA</span>
+            <span><i class="fa-solid fa-user-check text-secondary"></i> Background Verified Techs</span>
+            <span><i class="fa-solid fa-rotate-left text-warning"></i> 90-Day Warranty</span>
+          </div>
+        </div>
+
+        <!-- Hero Stats Cards Grid -->
+        <div class="hero-stats-grid animate-fade-in delay-2">
+          <div class="stat-card glass-card">
+            <div class="stat-icon bg-primary-light">
+              <i class="fa-solid fa-users-gear text-primary"></i>
+            </div>
+            <div class="stat-details">
+              <h3 class="stat-number" data-target="15400">15,400+</h3>
+              <p class="stat-label">Satisfied Clients</p>
+            </div>
+            <div class="stat-badge success">+24% this month</div>
+          </div>
+
+          <div class="stat-card glass-card">
+            <div class="stat-icon bg-teal-light">
+              <i class="fa-solid fa-certificate text-teal"></i>
+            </div>
+            <div class="stat-details">
+              <h3 class="stat-number" data-target="480">480+</h3>
+              <p class="stat-label">Certified Technicians</p>
+            </div>
+            <div class="stat-badge info">Verified & Rated</div>
+          </div>
+
+          <div class="stat-card glass-card">
+            <div class="stat-icon bg-indigo-light">
+              <i class="fa-solid fa-graduation-cap text-indigo"></i>
+            </div>
+            <div class="stat-details">
+              <h3 class="stat-number" data-target="125">125+</h3>
+              <p class="stat-label">Colleges & Offices</p>
+            </div>
+            <div class="stat-badge primary">AMC Contracted</div>
+          </div>
+
+          <div class="stat-card glass-card">
+            <div class="stat-icon bg-emerald-light">
+              <i class="fa-solid fa-circle-check text-emerald"></i>
+            </div>
+            <div class="stat-details">
+              <h3 class="stat-number" data-target="99">99.4%</h3>
+              <p class="stat-label">SLA Compliance</p>
+            </div>
+            <div class="stat-badge success">Guaranteed</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section-padding" id="services">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-solid fa-toolbox"></i> Our Services Marketplace</span>
+          <h2 class="section-title">Comprehensive Technical & Repair Solutions</h2>
+          <p class="section-subtitle">Browse transparent pricing, expert diagnostic services, and instant booking options.</p>
+
+          <!-- Category Filter Bar -->
+          <div class="filter-bar" id="services-filter-bar">
+            <button class="filter-btn active" data-filter="all">All Services</button>
+            <button class="filter-btn" data-filter="hardware">IT & Computers</button>
+            <button class="filter-btn" data-filter="home">Appliances</button>
+            <button class="filter-btn" data-filter="hvac">HVAC & Cooling</button>
+            <button class="filter-btn" data-filter="security">CCTV & Network</button>
+          </div>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="services-grid" id="services-grid">
+          
+          <!-- Service 1: Laptop Repair -->
+          <div class="service-card" data-category="hardware" data-title="Laptop Repair & Diagnostics">
+            <div class="card-header">
+              <div class="service-icon-box bg-blue">
+                <i class="fa-solid fa-laptop-medical"></i>
+              </div>
+              <span class="badge badge-popular">Popular</span>
+            </div>
+            <h3 class="service-title">Laptop Repair & Hardware Upgrade</h3>
+            <p class="service-desc">Display replacement, motherboard repair, liquid damage fix, RAM/SSD upgrades, and keyboard replacement for all major brands.</p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check text-success"></i> Free On-site Diagnostics</li>
+              <li><i class="fa-solid fa-check text-success"></i> Genuine OEM Parts</li>
+              <li><i class="fa-solid fa-check text-success"></i> 90-Day Repair Warranty</li>
+            </ul>
+            <div class="service-footer">
+              <div class="service-price">
+                <span class="price-label">Starts at</span>
+                <span class="price-value">$29</span>
+              </div>
+              <button class="btn btn-outline btn-sm" onclick="quickBookService('Laptop Repair & Diagnostics')">
+                <i class="fa-solid fa-calendar-plus"></i> Book Repair
+              </button>
+            </div>
+          </div>
+
+          <!-- Service 2: Computer & Server Repair -->
+          <div class="service-card" data-category="hardware" data-title="Computer & Server Maintenance">
+            <div class="card-header">
+              <div class="service-icon-box bg-indigo">
+                <i class="fa-solid fa-server"></i>
+              </div>
+              <span class="badge badge-tech">Enterprise Ready</span>
+            </div>
+            <h3 class="service-title">Computer & Server Maintenance</h3>
+            <p class="service-desc">Custom PC assembly, workstation performance optimization, malware removal, data recovery, and rack server maintenance.</p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check text-success"></i> Deep Hardware Cleaning</li>
+              <li><i class="fa-solid fa-check text-success"></i> OS & BIOS Diagnostics</li>
+              <li><i class="fa-solid fa-check text-success"></i> Server Backup Setup</li>
+            </ul>
+            <div class="service-footer">
+              <div class="service-price">
+                <span class="price-label">Starts at</span>
+                <span class="price-value">$39</span>
+              </div>
+              <button class="btn btn-outline btn-sm" onclick="quickBookService('Computer & Server Maintenance')">
+                <i class="fa-solid fa-calendar-plus"></i> Book Repair
+              </button>
+            </div>
+          </div>
+
+          <!-- Service 3: TV Repair -->
+          <div class="service-card" data-category="home" data-title="TV & Smart Display Repair">
+            <div class="card-header">
+              <div class="service-icon-box bg-purple">
+                <i class="fa-solid fa-tv"></i>
+              </div>
+            </div>
+            <h3 class="service-title">TV & Smart Display Repair</h3>
+            <p class="service-desc">Expert repairing for OLED, QLED, 4K LED TVs, screen panel replacement, power board repair, backlight fix, and smart TV OS setup.</p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check text-success"></i> In-Home Pickup & Service</li>
+              <li><i class="fa-solid fa-check text-success"></i> Motherboard Diagnostics</li>
+              <li><i class="fa-solid fa-check text-success"></i> Sound System Calibration</li>
+            </ul>
+            <div class="service-footer">
+              <div class="service-price">
+                <span class="price-label">Starts at</span>
+                <span class="price-value">$35</span>
+              </div>
+              <button class="btn btn-outline btn-sm" onclick="quickBookService('TV & Smart Display Repair')">
+                <i class="fa-solid fa-calendar-plus"></i> Book Repair
+              </button>
+            </div>
+          </div>
+
+          <!-- Service 4: Washing Machine Repair -->
+          <div class="service-card" data-category="home" data-title="Washing Machine Repair">
+            <div class="card-header">
+              <div class="service-icon-box bg-teal">
+                <i class="fa-solid fa-soap"></i>
+              </div>
+            </div>
+            <h3 class="service-title">Washing Machine Repair</h3>
+            <p class="service-desc">Front-load and top-load repairs, drum replacement, water leak resolution, PCB board repair, and motor belt replacement.</p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check text-success"></i> Same-Day Doorstep Visit</li>
+              <li><i class="fa-solid fa-check text-success"></i> Original Spare Parts</li>
+              <li><i class="fa-solid fa-check text-success"></i> Noise & Vibration Fix</li>
+            </ul>
+            <div class="service-footer">
+              <div class="service-price">
+                <span class="price-label">Starts at</span>
+                <span class="price-value">$32</span>
+              </div>
+              <button class="btn btn-outline btn-sm" onclick="quickBookService('Washing Machine Repair')">
+                <i class="fa-solid fa-calendar-plus"></i> Book Repair
+              </button>
+            </div>
+          </div>
+
+          <!-- Service 5: Printer Repair -->
+          <div class="service-card" data-category="hardware" data-title="Printer & Scanner Services">
+            <div class="card-header">
+              <div class="service-icon-box bg-orange">
+                <i class="fa-solid fa-print"></i>
+              </div>
+            </div>
+            <h3 class="service-title">Printer & Scanner Repair</h3>
+            <p class="service-desc">LaserJet, InkTank, and industrial plotter servicing, paper jam removal, cartridge refilling, printhead replacement, and Wi-Fi setup.</p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check text-success"></i> Roller & Gear Servicing</li>
+              <li><i class="fa-solid fa-check text-success"></i> Network Printer Sharing</li>
+              <li><i class="fa-solid fa-check text-success"></i> Bulk Ink Cartridge Support</li>
+            </ul>
+            <div class="service-footer">
+              <div class="service-price">
+                <span class="price-label">Starts at</span>
+                <span class="price-value">$25</span>
+              </div>
+              <button class="btn btn-outline btn-sm" onclick="quickBookService('Printer & Scanner Repair')">
+                <i class="fa-solid fa-calendar-plus"></i> Book Repair
+              </button>
+            </div>
+          </div>
+
+          <!-- Service 6: AC Repair -->
+          <div class="service-card" data-category="hvac" data-title="AC Repair & HVAC Maintenance">
+            <div class="card-header">
+              <div class="service-icon-box bg-cyan">
+                <i class="fa-solid fa-snowflake"></i>
+              </div>
+              <span class="badge badge-popular">High Demand</span>
+            </div>
+            <h3 class="service-title">AC Repair & Gas Refill</h3>
+            <p class="service-desc">Split, Window, and Central Inverter AC servicing, jet pressure cleaning, refrigerant gas leak detection, compressor repair, and installation.</p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check text-success"></i> Deep Foam Jet Wash</li>
+              <li><i class="fa-solid fa-check text-success"></i> R32/R410 Eco Gas Refill</li>
+              <li><i class="fa-solid fa-check text-success"></i> Cooling Efficiency Audit</li>
+            </ul>
+            <div class="service-footer">
+              <div class="service-price">
+                <span class="price-label">Starts at</span>
+                <span class="price-value">$45</span>
+              </div>
+              <button class="btn btn-outline btn-sm" onclick="quickBookService('AC Repair & Gas Refill')">
+                <i class="fa-solid fa-calendar-plus"></i> Book Repair
+              </button>
+            </div>
+          </div>
+
+          <!-- Service 7: Mobile Repair -->
+          <div class="service-card" data-category="hardware" data-title="Mobile & Tablet Repair">
+            <div class="card-header">
+              <div class="service-icon-box bg-rose">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+              </div>
+            </div>
+            <h3 class="service-title">Mobile & Tablet Repair</h3>
+            <p class="service-desc">Instant screen glass replacement, battery swap, charging port repair, speaker fix, and liquid damage restoration for iOS and Android.</p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check text-success"></i> 30-Minute Screen Replacement</li>
+              <li><i class="fa-solid fa-check text-success"></i> OEM Grade Displays</li>
+              <li><i class="fa-solid fa-check text-success"></i> Data Protection Guaranteed</li>
+            </ul>
+            <div class="service-footer">
+              <div class="service-price">
+                <span class="price-label">Starts at</span>
+                <span class="price-value">$22</span>
+              </div>
+              <button class="btn btn-outline btn-sm" onclick="quickBookService('Mobile & Tablet Repair')">
+                <i class="fa-solid fa-calendar-plus"></i> Book Repair
+              </button>
+            </div>
+          </div>
+
+          <!-- Service 8: CCTV Installation -->
+          <div class="service-card" data-category="security" data-title="CCTV & Surveillance Installation">
+            <div class="card-header">
+              <div class="service-icon-box bg-emerald">
+                <i class="fa-solid fa-video"></i>
+              </div>
+              <span class="badge badge-tech">Security</span>
+            </div>
+            <h3 class="service-title">CCTV & Surveillance Setup</h3>
+            <p class="service-desc">HD & IP camera installation, NVR/DVR multi-channel configuration, mobile cloud monitoring setup, night-vision camera alignment, and maintenance.</p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check text-success"></i> Remote Phone View Setup</li>
+              <li><i class="fa-solid fa-check text-success"></i> Outdoor Weatherproof Wiring</li>
+              <li><i class="fa-solid fa-check text-success"></i> Hard Disk Storage Config</li>
+            </ul>
+            <div class="service-footer">
+              <div class="service-price">
+                <span class="price-label">Starts at</span>
+                <span class="price-value">$69</span>
+              </div>
+              <button class="btn btn-outline btn-sm" onclick="quickBookService('CCTV & Surveillance Setup')">
+                <i class="fa-solid fa-calendar-plus"></i> Book Repair
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Technician Section -->
+    <section class="technicians section-padding bg-alt" id="technicians">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-solid fa-user-shield"></i> Ecosystem Network</span>
+          <h2 class="section-title">Verified Certified Technicians</h2>
+          <p class="section-subtitle">Real-time availability, background-verified credentials, and top customer ratings.</p>
+
+          <!-- Technician Domain Filter -->
+          <div class="filter-bar" id="tech-filter-bar">
+            <button class="filter-btn active" data-tech="all">All Technicians</button>
+            <button class="filter-btn" data-tech="it">IT & Hardware</button>
+            <button class="filter-btn" data-tech="hvac">HVAC & Cooling</button>
+            <button class="filter-btn" data-tech="cctv">Security & CCTV</button>
+            <button class="filter-btn" data-tech="appliances">Home Appliances</button>
+          </div>
+        </div>
+
+        <!-- Technicians Cards Grid -->
+        <div class="technicians-grid" id="technicians-grid">
+
+          <!-- Tech Card 1 -->
+          <div class="tech-card" data-domain="it">
+            <div class="tech-card-header">
+              <div class="tech-avatar-wrapper">
+                <div class="tech-avatar bg-blue">
+                  <span>RM</span>
+                </div>
+                <span class="status-indicator online" title="Available Today"></span>
+              </div>
+              <div class="tech-rating">
+                <i class="fa-solid fa-star text-warning"></i>
+                <span class="rating-value">4.95</span>
+                <span class="reviews-count">(340 reviews)</span>
+              </div>
+            </div>
+
+            <div class="tech-info">
+              <h3 class="tech-name">Robert Martinez</h3>
+              <p class="tech-role">Senior IT & Chip-Level Engineer</p>
+              
+              <div class="tech-meta">
+                <span class="badge badge-experience"><i class="fa-solid fa-briefcase"></i> 8+ Yrs Exp</span>
+                <span class="badge badge-jobs"><i class="fa-solid fa-check-double"></i> 1,420+ Jobs</span>
+              </div>
+
+              <p class="tech-bio">Specialist in laptop motherboard micro-soldering, server hardware diagnostics, and data recovery systems.</p>
+
+              <div class="tech-skills">
+                <span class="skill-tag">Motherboard Fix</span>
+                <span class="skill-tag">Dell Certified</span>
+                <span class="skill-tag">Server Admin</span>
+              </div>
+            </div>
+
+            <div class="tech-footer">
+              <div class="availability-status text-success">
+                <i class="fa-solid fa-circle-check"></i> Available Today
+              </div>
+              <button class="btn btn-primary btn-sm" onclick="requestSpecificTech('Robert Martinez', 'Laptop & Server Repair')">
+                <i class="fa-solid fa-calendar-check"></i> Request Tech
+              </button>
+            </div>
+          </div>
+
+          <!-- Tech Card 2 -->
+          <div class="tech-card" data-domain="hvac">
+            <div class="tech-card-header">
+              <div class="tech-avatar-wrapper">
+                <div class="tech-avatar bg-cyan">
+                  <span>SJ</span>
+                </div>
+                <span class="status-indicator online" title="Available Today"></span>
+              </div>
+              <div class="tech-rating">
+                <i class="fa-solid fa-star text-warning"></i>
+                <span class="rating-value">4.91</span>
+                <span class="reviews-count">(280 reviews)</span>
+              </div>
+            </div>
+
+            <div class="tech-info">
+              <h3 class="tech-name">Sarah Jenkins</h3>
+              <p class="tech-role">HVAC & Inverter AC Specialist</p>
+              
+              <div class="tech-meta">
+                <span class="badge badge-experience"><i class="fa-solid fa-briefcase"></i> 6+ Yrs Exp</span>
+                <span class="badge badge-jobs"><i class="fa-solid fa-check-double"></i> 980+ Jobs</span>
+              </div>
+
+              <p class="tech-bio">Expert in commercial VRV/VRF air conditioning systems, gas leak sealing, and inverter PCB repairs.</p>
+
+              <div class="tech-skills">
+                <span class="skill-tag">HVAC Master</span>
+                <span class="skill-tag">Gas Leak Fix</span>
+                <span class="skill-tag">Daikin Certified</span>
+              </div>
+            </div>
+
+            <div class="tech-footer">
+              <div class="availability-status text-success">
+                <i class="fa-solid fa-circle-check"></i> Available Today
+              </div>
+              <button class="btn btn-primary btn-sm" onclick="requestSpecificTech('Sarah Jenkins', 'AC Repair & HVAC')">
+                <i class="fa-solid fa-calendar-check"></i> Request Tech
+              </button>
+            </div>
+          </div>
+
+          <!-- Tech Card 3 -->
+          <div class="tech-card" data-domain="cctv">
+            <div class="tech-card-header">
+              <div class="tech-avatar-wrapper">
+                <div class="tech-avatar bg-emerald">
+                  <span>DK</span>
+                </div>
+                <span class="status-indicator busy" title="In Service - Available at 4 PM"></span>
+              </div>
+              <div class="tech-rating">
+                <i class="fa-solid fa-star text-warning"></i>
+                <span class="rating-value">4.88</span>
+                <span class="reviews-count">(195 reviews)</span>
+              </div>
+            </div>
+
+            <div class="tech-info">
+              <h3 class="tech-name">David Kalu</h3>
+              <p class="tech-role">CCTV & Network Security Lead</p>
+              
+              <div class="tech-meta">
+                <span class="badge badge-experience"><i class="fa-solid fa-briefcase"></i> 7+ Yrs Exp</span>
+                <span class="badge badge-jobs"><i class="fa-solid fa-check-double"></i> 850+ Jobs</span>
+              </div>
+
+              <p class="tech-bio">Specializes in campus multi-building IP surveillance, biometric access doors, and optical fiber splicing.</p>
+
+              <div class="tech-skills">
+                <span class="skill-tag">Cisco CCNA</span>
+                <span class="skill-tag">Hikvision Tech</span>
+                <span class="skill-tag">Fiber Optic</span>
+              </div>
+            </div>
+
+            <div class="tech-footer">
+              <div class="availability-status text-warning">
+                <i class="fa-solid fa-clock"></i> Free at 4:00 PM
+              </div>
+              <button class="btn btn-primary btn-sm" onclick="requestSpecificTech('David Kalu', 'CCTV & Network Setup')">
+                <i class="fa-solid fa-calendar-check"></i> Request Tech
+              </button>
+            </div>
+          </div>
+
+          <!-- Tech Card 4 -->
+          <div class="tech-card" data-domain="appliances">
+            <div class="tech-card-header">
+              <div class="tech-avatar-wrapper">
+                <div class="tech-avatar bg-purple">
+                  <span>AP</span>
+                </div>
+                <span class="status-indicator online" title="Available Today"></span>
+              </div>
+              <div class="tech-rating">
+                <i class="fa-solid fa-star text-warning"></i>
+                <span class="rating-value">4.97</span>
+                <span class="reviews-count">(410 reviews)</span>
+              </div>
+            </div>
+
+            <div class="tech-info">
+              <h3 class="tech-name">Anita Patel</h3>
+              <p class="tech-role">Home Appliances & TV Specialist</p>
+              
+              <div class="tech-meta">
+                <span class="badge badge-experience"><i class="fa-solid fa-briefcase"></i> 9+ Yrs Exp</span>
+                <span class="badge badge-jobs"><i class="fa-solid fa-check-double"></i> 1,890+ Jobs</span>
+              </div>
+
+              <p class="tech-bio">Expert in washing machine motor replacement, smart 4K TV panel repairs, and microwave PCB diagnostics.</p>
+
+              <div class="tech-skills">
+                <span class="skill-tag">LG Certified</span>
+                <span class="skill-tag">OLED Panel</span>
+                <span class="skill-tag">PCB Repair</span>
+              </div>
+            </div>
+
+            <div class="tech-footer">
+              <div class="availability-status text-success">
+                <i class="fa-solid fa-circle-check"></i> Available Today
+              </div>
+              <button class="btn btn-primary btn-sm" onclick="requestSpecificTech('Anita Patel', 'Washing Machine / TV Repair')">
+                <i class="fa-solid fa-calendar-check"></i> Request Tech
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Institutional & Enterprise Solutions (Colleges & Offices) -->
+    <section class="enterprise section-padding" id="enterprise">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-solid fa-building-columns"></i> Institutional & Corporate Solutions</span>
+          <h2 class="section-title">Annual Maintenance Contracts (AMC) for Colleges & Offices</h2>
+          <p class="section-subtitle">Dedicated on-site resident engineers, structured lab upkeep, campus network support, and bulk pricing.</p>
+        </div>
+
+        <div class="enterprise-grid">
+          
+          <!-- Solution Card 1 -->
+          <div class="enterprise-card glass-card">
+            <div class="ent-icon bg-primary-light">
+              <i class="fa-solid fa-file-contract text-primary"></i>
+            </div>
+            <h3>Comprehensive AMC Contracts</h3>
+            <p>Year-round maintenance coverage for all computers, laptops, printers, projectors, and UPS backups with guaranteed 2-hour response SLA.</p>
+            <ul>
+              <li><i class="fa-solid fa-circle-check text-success"></i> Preventive Monthly Maintenance</li>
+              <li><i class="fa-solid fa-circle-check text-success"></i> Free Hardware Replacement Cover</li>
+              <li><i class="fa-solid fa-circle-check text-success"></i> Dedicated Resident Engineer</li>
+            </ul>
+          </div>
+
+          <!-- Solution Card 2 -->
+          <div class="enterprise-card glass-card">
+            <div class="ent-icon bg-indigo-light">
+              <i class="fa-solid fa-desktop text-indigo"></i>
+            </div>
+            <h3>College Computer Lab Upkeep</h3>
+            <p>Complete lab deployment, multi-OS imaging (Windows/Linux), LAN cabling cleanup, student software installation, and deep hardware audits.</p>
+            <ul>
+              <li><i class="fa-solid fa-circle-check text-success"></i> Bulk OS & Software Deployment</li>
+              <li><i class="fa-solid fa-circle-check text-success"></i> Hardware Inventory Tagging</li>
+              <li><i class="fa-solid fa-circle-check text-success"></i> Exam Hall Tech Support</li>
+            </ul>
+          </div>
+
+          <!-- Solution Card 3 -->
+          <div class="enterprise-card glass-card">
+            <div class="ent-icon bg-teal-light">
+              <i class="fa-solid fa-network-wired text-teal"></i>
+            </div>
+            <h3>Campus & Office Networking</h3>
+            <p>Structured CAT6/Fiber optic cabling, Wi-Fi 6 enterprise router management, firewall security configuration, and bandwidth load balancing.</p>
+            <ul>
+              <li><i class="fa-solid fa-circle-check text-success"></i> Seamless Campus Roaming Wi-Fi</li>
+              <li><i class="fa-solid fa-circle-check text-success"></i> Fortinet / SonicWall Security</li>
+              <li><i class="fa-solid fa-circle-check text-success"></i> 24/7 Network Monitoring</li>
+            </ul>
+          </div>
+
+          <!-- Solution Card 4 -->
+          <div class="enterprise-card glass-card">
+            <div class="ent-icon bg-emerald-light">
+              <i class="fa-solid fa-shield-cat text-emerald"></i>
+            </div>
+            <h3>CCTV & Biometric Security AMC</h3>
+            <p>Multi-building surveillance maintenance, biometric attendance punch machines, smart classroom podiums, and NVR cloud storage backups.</p>
+            <ul>
+              <li><i class="fa-solid fa-circle-check text-success"></i> Camera Lens & Focus Tuning</li>
+              <li><i class="fa-solid fa-circle-check text-success"></i> Biometric Data Syncing</li>
+              <li><i class="fa-solid fa-circle-check text-success"></i> Instant Failure Alerts</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- AMC Cost Estimator Calculator Box -->
+        <div class="amc-calculator-box">
+          <div class="calc-header">
+            <div class="calc-title-group">
+              <span class="badge badge-popular">Interactive Estimator</span>
+              <h3><i class="fa-solid fa-calculator"></i> Enterprise AMC Cost & Savings Calculator</h3>
+              <p>Estimate your annual maintenance cost and savings based on your institution size.</p>
+            </div>
+          </div>
+
+          <div class="calc-body">
+            <div class="calc-inputs">
+              <!-- Facility Type Selector -->
+              <div class="form-group">
+                <label for="calc-facility-type"><i class="fa-solid fa-building"></i> Facility Type:</label>
+                <select id="calc-facility-type" class="form-control" onchange="calculateAMCCost()">
+                  <option value="college">Engineering & Degree College / University</option>
+                  <option value="corporate">Corporate Office / Tech Park</option>
+                  <option value="school">School / Training Academy</option>
+                  <option value="hospital">Hospital / Healthcare Center</option>
+                </select>
+              </div>
+
+              <!-- Number of Devices Slider -->
+              <div class="form-group">
+                <div class="slider-header">
+                  <label for="calc-device-count"><i class="fa-solid fa-laptop-code"></i> Total Managed Computers & Units:</label>
+                  <span class="slider-value" id="calc-device-value">50 Units</span>
+                </div>
+                <input type="range" id="calc-device-count" min="10" max="500" step="10" value="50" oninput="calculateAMCCost()">
+                <div class="slider-labels">
+                  <span>10 Units</span>
+                  <span>250 Units</span>
+                  <span>500+ Units</span>
+                </div>
+              </div>
+
+              <!-- SLA Choice -->
+              <div class="form-group">
+                <label><i class="fa-solid fa-clock-history"></i> Preferred SLA Level:</label>
+                <div class="radio-options-grid">
+                  <label class="radio-card">
+                    <input type="radio" name="calc-sla" value="standard" checked onchange="calculateAMCCost()">
+                    <div class="radio-content">
+                      <span class="radio-title">Standard SLA</span>
+                      <span class="radio-desc">Next-Day Response • Monthly Audits</span>
+                    </div>
+                  </label>
+                  <label class="radio-card">
+                    <input type="radio" name="calc-sla" value="priority" onchange="calculateAMCCost()">
+                    <div class="radio-content">
+                      <span class="radio-title">Priority Gold SLA</span>
+                      <span class="radio-desc">4-Hour Response • Resident Tech</span>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Output Calculation Card -->
+            <div class="calc-outputs">
+              <div class="calc-output-card">
+                <h4>Estimated Enterprise Package</h4>
+                <div class="output-row">
+                  <span>Base AMC Rate / Unit:</span>
+                  <strong id="out-unit-rate">$15 / unit / year</strong>
+                </div>
+                <div class="output-row">
+                  <span>Scheduled Maintenance Visits:</span>
+                  <strong id="out-visits">12 Visits / Year</strong>
+                </div>
+                <div class="output-row">
+                  <span>Estimated Total AMC Cost:</span>
+                  <h3 class="total-price" id="out-total-cost">$750 / year</h3>
+                </div>
+                <div class="savings-callout bg-success-light text-success">
+                  <i class="fa-solid fa-piggy-bank"></i>
+                  <span>Estimated Savings vs. Per-Call Repairs: <strong id="out-savings">$450 / yr (37% off)</strong></span>
+                </div>
+                <button class="btn btn-primary btn-block mt-3" onclick="requestBulkProposal()">
+                  <i class="fa-solid fa-paper-plane"></i> Request Custom Institutional SLA Proposal
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Live Service Request Tracker Section -->
+    <section class="tracker section-padding bg-alt" id="tracker">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-solid fa-route"></i> Transparent Operations</span>
+          <h2 class="section-title">Live Service Ticket Tracker</h2>
+          <p class="section-subtitle">Track your technician location, repair status, diagnostic notes, and estimated completion time.</p>
+        </div>
+
+        <div class="tracker-box glass-card">
+          <div class="tracker-search-bar">
+            <div class="search-input-wrapper">
+              <i class="fa-solid fa-receipt search-icon"></i>
+              <input type="text" id="tracker-input" placeholder="Enter Service Ticket ID (e.g. TECH-8842 or TECH-2026)..." value="TECH-8842">
+            </div>
+            <button class="btn btn-primary" id="btn-track-submit">
+              <i class="fa-solid fa-crosshairs"></i> Track Ticket
+            </button>
+          </div>
+          <p class="tracker-hint"><i class="fa-solid fa-circle-info"></i> Try sample ticket IDs: <button class="sample-chip" onclick="fillTracker('TECH-8842')">TECH-8842</button> or <button class="sample-chip" onclick="fillTracker('TECH-2026')">TECH-2026</button></p>
+
+          <!-- Dynamic Ticket Results Display -->
+          <div class="ticket-result-container" id="ticket-result">
+            <div class="ticket-header-info">
+              <div class="ticket-id-badge">
+                <span class="ticket-label">TICKET ID:</span>
+                <strong class="ticket-id-value" id="res-ticket-id">TECH-8842</strong>
+              </div>
+              <div class="ticket-meta">
+                <span><i class="fa-solid fa-calendar"></i> Booked: <strong>Today, 10:15 AM</strong></span>
+                <span><i class="fa-solid fa-toolbox"></i> Service: <strong id="res-service-name">Laptop Motherboard Repair</strong></span>
+              </div>
+            </div>
+
+            <!-- Stepper Progress Bar -->
+            <div class="stepper-wrapper">
+              <div class="stepper-progress-bar">
+                <div class="stepper-progress-fill" id="stepper-fill" style="width: 60%;"></div>
+              </div>
+              <div class="stepper-steps">
+                <div class="step completed">
+                  <div class="step-icon"><i class="fa-solid fa-clipboard-check"></i></div>
+                  <span class="step-label">Received</span>
+                </div>
+                <div class="step completed">
+                  <div class="step-icon"><i class="fa-solid fa-user-gear"></i></div>
+                  <span class="step-label">Assigned</span>
+                </div>
+                <div class="step active">
+                  <div class="step-icon"><i class="fa-solid fa-microchip"></i></div>
+                  <span class="step-label">In Repair</span>
+                </div>
+                <div class="step">
+                  <div class="step-icon"><i class="fa-solid fa-vial-circle-check"></i></div>
+                  <span class="step-label">Quality Check</span>
+                </div>
+                <div class="step">
+                  <div class="step-icon"><i class="fa-solid fa-truck-ramp-box"></i></div>
+                  <span class="step-label">Ready / Delivered</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Live Status Details Cards -->
+            <div class="ticket-details-grid">
+              <div class="detail-card">
+                <div class="detail-icon bg-blue-light text-primary"><i class="fa-solid fa-user-check"></i></div>
+                <div>
+                  <span class="detail-title">Assigned Lead Tech</span>
+                  <h4 class="detail-value" id="res-tech-name">Robert Martinez (Senior Engineer)</h4>
+                  <p class="detail-sub text-success"><i class="fa-solid fa-phone"></i> +1 (800) 555-0192</p>
+                </div>
+              </div>
+
+              <div class="detail-card">
+                <div class="detail-icon bg-emerald-light text-emerald"><i class="fa-solid fa-clock"></i></div>
+                <div>
+                  <span class="detail-title">Estimated SLA Completion</span>
+                  <h4 class="detail-value" id="res-completion-time">Today by 4:30 PM</h4>
+                  <p class="detail-sub text-muted">On Schedule</p>
+                </div>
+              </div>
+
+              <div class="detail-card">
+                <div class="detail-icon bg-purple-light text-purple"><i class="fa-solid fa-notes-medical"></i></div>
+                <div>
+                  <span class="detail-title">Technician Diagnostic Notes</span>
+                  <p class="detail-sub" id="res-tech-notes">"Power IC replaced on motherboard. Currently running 2-hour stress test and thermal paste application."</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Slider Section -->
+    <section class="testimonials section-padding" id="testimonials">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-solid fa-heart"></i> Client Testimonials</span>
+          <h2 class="section-title">What Our Ecosystem Partners Say</h2>
+          <p class="section-subtitle">Trusted by homeowners, college deans, corporate IT directors, and lab administrators.</p>
+        </div>
+
+        <div class="testimonial-slider-container">
+          <div class="testimonial-wrapper" id="testimonial-wrapper">
+
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card glass-card">
+              <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+              <div class="star-rating">
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+              </div>
+              <p class="testimonial-text">
+                "TechServe Pro manages all 8 of our computer science labs across campus (450+ PCs). Their Annual Maintenance Contract reduced computer downtime during exam season from 15% to 0%. Incredible response SLA!"
+              </p>
+              <div class="author-info">
+                <div class="author-avatar bg-indigo">Dr. A</div>
+                <div>
+                  <h4 class="author-name">Dr. Alan Vance</h4>
+                  <p class="author-role">Director of IT, City Engineering College</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card glass-card">
+              <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+              <div class="star-rating">
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+              </div>
+              <p class="testimonial-text">
+                "My gaming laptop had a liquid spill right before a major project submission. Robert arrived at my apartment within 30 minutes, cleaned the motherboard, and saved all my data. Super professional!"
+              </p>
+              <div class="author-info">
+                <div class="author-avatar bg-blue">MS</div>
+                <div>
+                  <h4 class="author-name">Michael Scott</h4>
+                  <p class="author-role">Postgraduate Student</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card glass-card">
+              <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+              <div class="star-rating">
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+              </div>
+              <p class="testimonial-text">
+                "We needed 32 IP CCTV cameras and Wi-Fi 6 access points installed across our 3-story corporate office. TechServe Pro's team executed the entire setup over the weekend with zero workflow disruption."
+              </p>
+              <div class="author-info">
+                <div class="author-avatar bg-teal">EL</div>
+                <div>
+                  <h4 class="author-name">Elena Lin</h4>
+                  <p class="author-role">Operations Manager, NextGen Media Corp</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Slider Controls -->
+          <div class="slider-controls">
+            <button class="slider-arrow prev-btn" id="slider-prev"><i class="fa-solid fa-arrow-left"></i></button>
+            <div class="slider-dots" id="slider-dots">
+              <span class="dot active" data-slide="0"></span>
+              <span class="dot" data-slide="1"></span>
+              <span class="dot" data-slide="2"></span>
+            </div>
+            <button class="slider-arrow next-btn" id="slider-next"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Accordion Section -->
+    <section class="faq section-padding bg-alt" id="faq">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-solid fa-circle-question"></i> FAQ</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">Got questions? We have answers regarding bookings, AMC contracts, and warranty policies.</p>
+        </div>
+
+        <div class="faq-accordion-wrapper">
+
+          <!-- FAQ Item 1 -->
+          <div class="faq-item active">
+            <button class="faq-question" aria-expanded="true">
+              <span><i class="fa-solid fa-clock text-primary"></i> How fast does a technician arrive after booking?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>For urgent home and office repairs, our technicians arrive within 30 to 60 minutes in major metro zones. Institutional AMC contract holders receive guaranteed 2-hour emergency dispatch SLAs.</p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span><i class="fa-solid fa-building-columns text-primary"></i> What is included in an Institutional AMC for colleges?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Our College Annual Maintenance Contract includes preventive monthly visits, free hardware repair labor, OS software re-imaging, network switch management, server backups, exam support, and resident on-campus technicians.</p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span><i class="fa-solid fa-shield-check text-primary"></i> Are your technicians background checked & certified?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. Every technician in our ecosystem undergoes mandatory police background verification, technical skill certification tests (CompTIA, Cisco, OEM certifications), and customer satisfaction monitoring.</p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span><i class="fa-solid fa-award text-primary"></i> What warranty do you offer on replacement parts?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>We provide a comprehensive 90-day service warranty on all repair jobs and pass through standard manufacturer warranties (up to 1 to 3 years) on original spare parts replaced by our team.</p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 5 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span><i class="fa-solid fa-hand-holding-dollar text-primary"></i> How does pricing and payment work?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>We believe in 100% transparent pricing with free upfront diagnostic quotes. You only pay after the job is completed and tested. We accept Credit Cards, UPI, NetBanking, and corporate purchase orders (POs).</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Inquiry Section -->
+    <section class="contact section-padding" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          
+          <!-- Left Column: Contact Info Cards -->
+          <div class="contact-info-col">
+            <span class="section-tag"><i class="fa-solid fa-headset"></i> Get In Touch</span>
+            <h2 class="section-title">We are here to support your technical needs 24/7</h2>
+            <p class="section-subtitle">Have a question, emergency repair request, or institutional AMC requirement? Contact our team today.</p>
+
+            <div class="info-cards-stack">
+              <div class="info-card">
+                <div class="info-icon bg-primary-light text-primary"><i class="fa-solid fa-phone-volume"></i></div>
+                <div>
+                  <h4>24/7 Support Hotline</h4>
+                  <p><a href="tel:18005558324">1-800-555-TECH (8324)</a></p>
+                  <span class="info-sub">Emergency SLA Dispatch Available</span>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <div class="info-icon bg-teal-light text-teal"><i class="fa-solid fa-envelope-open-text"></i></div>
+                <div>
+                  <h4>Official Email Inquiries</h4>
+                  <p><a href="mailto:support@techservepro.com">support@techservepro.com</a></p>
+                  <span class="info-sub">Response within 15 Minutes</span>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <div class="info-icon bg-indigo-light text-indigo"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <h4>Global Headquarters</h4>
+                  <p>TechServe Innovation Tower, Suite 800<br>Silicon Tech Park, CA 94025</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Contact Form -->
+          <div class="contact-form-col">
+            <div class="form-card glass-card">
+              <h3><i class="fa-solid fa-paper-plane"></i> Send Us a Message</h3>
+              <p>Fill out the form below and our ecosystem coordinator will respond promptly.</p>
+
+              <form id="contact-form" novalidate>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="contact-name">Full Name <span class="text-danger">*</span></label>
+                    <input type="text" id="contact-name" class="form-control" placeholder="John Doe" required>
+                    <span class="error-msg" id="err-name">Please enter your name.</span>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="contact-email">Email Address <span class="text-danger">*</span></label>
+                    <input type="email" id="contact-email" class="form-control" placeholder="john@example.com" required>
+                    <span class="error-msg" id="err-email">Please enter a valid email.</span>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="contact-phone">Phone Number <span class="text-danger">*</span></label>
+                    <input type="tel" id="contact-phone" class="form-control" placeholder="+1 (555) 000-0000" required>
+                    <span class="error-msg" id="err-phone">Please enter your phone number.</span>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="contact-role">I Am A: <span class="text-danger">*</span></label>
+                    <select id="contact-role" class="form-control">
+                      <option value="customer">Individual / Homeowner</option>
+                      <option value="college">College / University Representative</option>
+                      <option value="office">Corporate Office Admin</option>
+                      <option value="technician">Technician Applicant</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-service">Required Service / Topic:</label>
+                  <select id="contact-service" class="form-control">
+                    <option value="general">General Support Inquiry</option>
+                    <option value="laptop">Laptop / PC Repair</option>
+                    <option value="ac">AC & HVAC Servicing</option>
+                    <option value="cctv">CCTV & Network Installation</option>
+                    <option value="amc">Institutional AMC Contract Request</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-message">Message / Problem Description <span class="text-danger">*</span></label>
+                  <textarea id="contact-message" class="form-control" rows="4" placeholder="Briefly describe your hardware issue or AMC requirements..." required></textarea>
+                  <span class="error-msg" id="err-message">Please enter a message.</span>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block btn-lg">
+                  <i class="fa-solid fa-paper-plane"></i> Submit Inquiry
+                </button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <a href="#hero" class="nav-logo">
+            <div class="logo-icon"><i class="fa-solid fa-microchip"></i></div>
+            <span class="brand-name">TechServe<span class="brand-accent">Pro</span></span>
+          </a>
+          <p class="footer-desc">
+            The next-generation technical support ecosystem bridging customers, verified engineers, colleges, and corporate offices with guaranteed SLAs.
+          </p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Technical Services</h4>
+          <ul>
+            <li><a href="#services">Laptop & Mac Repair</a></li>
+            <li><a href="#services">Computer & Server Maintenance</a></li>
+            <li><a href="#services">AC & HVAC Gas Refilling</a></li>
+            <li><a href="#services">CCTV & IP Camera Setup</a></li>
+            <li><a href="#services">Washing Machine Servicing</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Enterprise & AMC</h4>
+          <ul>
+            <li><a href="#enterprise">College Computer Lab AMC</a></li>
+            <li><a href="#enterprise">Corporate Network Infrastructure</a></li>
+            <li><a href="#enterprise">Bulk Hardware Servicing</a></li>
+            <li><a href="#enterprise">AMC Cost Estimator</a></li>
+            <li><a href="#technicians">Become a Certified Tech</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter-col">
+          <h4>Stay Updated</h4>
+          <p>Subscribe to our tech maintenance newsletter and get exclusive AMC discounts.</p>
+          <form id="newsletter-form" class="newsletter-form">
+            <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+            <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i></button>
+          </form>
+          <span class="newsletter-note"><i class="fa-solid fa-shield"></i> We respect your privacy. No spam.</span>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 TechServe Pro Ecosystem Inc. All rights reserved. Designed for BCA Mini Project & Startup Showcase.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">SLA Agreement</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="back-to-top" title="Back to Top" aria-label="Back to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Floating Toast Notifications Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- MODALS -->
+
+  <!-- 1. BOOK SERVICE MODAL -->
+  <div class="modal-overlay" id="modal-book">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3><i class="fa-solid fa-calendar-plus text-primary"></i> Book Technical Service</h3>
+        <button class="modal-close" onclick="closeModal('modal-book')"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal-body">
+        <form id="booking-form">
+          
+          <!-- Step 1: Select Service & Tech -->
+          <div class="form-group">
+            <label for="book-service-type">Select Service Category <span class="text-danger">*</span></label>
+            <select id="book-service-type" class="form-control" required>
+              <option value="">-- Choose a Service --</option>
+              <option value="Laptop Repair & Hardware Upgrade">Laptop Repair & Diagnostics</option>
+              <option value="Computer & Server Maintenance">Computer Workstation & Server Setup</option>
+              <option value="AC Repair & Gas Refill">AC Repair & HVAC Servicing</option>
+              <option value="CCTV & Surveillance Setup">CCTV Camera & Security Installation</option>
+              <option value="TV & Smart Display Repair">TV & Smart Display Repair</option>
+              <option value="Washing Machine Repair">Washing Machine Servicing</option>
+              <option value="Printer & Scanner Repair">Printer & Scanner Repair</option>
+              <option value="Mobile & Tablet Repair">Mobile Phone & Tablet Repair</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="book-tech-preference">Requested Technician (Optional)</label>
+            <select id="book-tech-preference" class="form-control">
+              <option value="any">First Available Nearest Certified Engineer</option>
+              <option value="Robert Martinez">Robert Martinez (IT & Chip-Level)</option>
+              <option value="Sarah Jenkins">Sarah Jenkins (HVAC & AC Master)</option>
+              <option value="David Kalu">David Kalu (CCTV & Network Lead)</option>
+              <option value="Anita Patel">Anita Patel (Home Appliances & TV)</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="book-date">Preferred Date <span class="text-danger">*</span></label>
+              <input type="date" id="book-date" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="book-time">Preferred Time Slot <span class="text-danger">*</span></label>
+              <select id="book-time" class="form-control" required>
+                <option value="Morning (9 AM - 12 PM)">Morning (9:00 AM - 12:00 PM)</option>
+                <option value="Afternoon (12 PM - 3 PM)">Afternoon (12:00 PM - 3:00 PM)</option>
+                <option value="Evening (3 PM - 6 PM)">Evening (3:00 PM - 6:00 PM)</option>
+                <option value="Emergency Immediate">Emergency Immediate (30-Min SLA)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="book-address">Service Location Address <span class="text-danger">*</span></label>
+            <input type="text" id="book-address" class="form-control" placeholder="House/Office No., Street, City, Zip Code" required>
+          </div>
+
+          <div class="form-group">
+            <label for="book-phone">Contact Phone Number <span class="text-danger">*</span></label>
+            <input type="tel" id="book-phone" class="form-control" placeholder="+1 (555) 000-0000" required>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block btn-lg mt-3">
+            <i class="fa-solid fa-check-circle"></i> Confirm Booking Request
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. TRACKING TICKET MODAL -->
+  <div class="modal-overlay" id="modal-track">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3><i class="fa-solid fa-magnifying-glass text-primary"></i> Track Service Ticket</h3>
+        <button class="modal-close" onclick="closeModal('modal-track')"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal-body">
+        <p>Enter your 8-digit ticket code to check live technician status:</p>
+        <div class="form-group">
+          <input type="text" id="modal-ticket-input" class="form-control" placeholder="e.g. TECH-8842" value="TECH-8842">
+        </div>
+        <button class="btn btn-primary btn-block" onclick="submitModalTracker()">
+          <i class="fa-solid fa-location-arrow"></i> View Live Ticket Progress
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. AUTHENTICATION (LOGIN/REGISTER) MODAL -->
+  <div class="modal-overlay" id="modal-auth">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3><i class="fa-solid fa-user-lock text-primary"></i> Ecosystem Portal Login</h3>
+        <button class="modal-close" onclick="closeModal('modal-auth')"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal-body">
+        <!-- Auth Role Switcher Tabs -->
+        <div class="auth-tabs">
+          <button class="auth-tab active" onclick="switchAuthTab('customer')">Customer</button>
+          <button class="auth-tab" onclick="switchAuthTab('technician')">Technician</button>
+          <button class="auth-tab" onclick="switchAuthTab('enterprise')">College/Office</button>
+        </div>
+
+        <form id="auth-form">
+          <div class="form-group">
+            <label for="auth-email">Email or Portal ID</label>
+            <input type="email" id="auth-email" class="form-control" placeholder="user@domain.com" required>
+          </div>
+          <div class="form-group">
+            <label for="auth-password">Password</label>
+            <input type="password" id="auth-password" class="form-control" placeholder="••••••••" required>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block btn-lg mt-3">
+            <i class="fa-solid fa-right-to-bracket"></i> Login to Portal
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. BROCHURE PREVIEW / DOWNLOAD MODAL -->
+  <div class="modal-overlay" id="modal-brochure">
+    <div class="modal-card modal-lg">
+      <div class="modal-header">
+        <h3><i class="fa-solid fa-file-pdf text-danger"></i> Ecosystem Service Brochure 2026</h3>
+        <button class="modal-close" onclick="closeModal('modal-brochure')"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="brochure-preview-box">
+          <div class="brochure-header text-center">
+            <h2>TechServe Pro Technical Ecosystem</h2>
+            <p>Unified Technical Support for Homes, Colleges & Corporate Offices</p>
+            <span class="badge badge-popular">Official Publication</span>
+          </div>
+
+          <div class="brochure-content-grid">
+            <div>
+              <h4><i class="fa-solid fa-check text-success"></i> Core Service Offerings</h4>
+              <ul>
+                <li>Laptop & Computer Chip-Level Repair</li>
+                <li>Inverter AC & HVAC System Servicing</li>
+                <li>HD/IP CCTV & Network Security Installation</li>
+                <li>Home Appliance Doorstep Repair</li>
+              </ul>
+            </div>
+            <div>
+              <h4><i class="fa-solid fa-building-columns text-primary"></i> Institutional AMC Benefits</h4>
+              <ul>
+                <li>Guaranteed 2-Hour Emergency Response SLA</li>
+                <li>Resident On-Campus IT Engineers</li>
+                <li>Preventive Monthly Hardware Audits</li>
+                <li>Dedicated Account & Inventory Dashboard</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer-actions">
+          <button class="btn btn-secondary" onclick="closeModal('modal-brochure')">Close</button>
+          <button class="btn btn-primary" onclick="downloadBrochureFile()">
+            <i class="fa-solid fa-download"></i> Download Full PDF Brochure
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
